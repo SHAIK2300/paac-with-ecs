@@ -1,7 +1,7 @@
 FROM openjdk:11 AS BUILD_IMAGE
 RUN apt update && apt install maven -y
-RUN git clone https://github.com/Hussain147/paac_with_ecs.git
-RUN cd paac_with_ecs && mvn install
+RUN git clone https://github.com/Hussain147/paac-with-ecs.git
+RUN cd paac-with-ecs && mvn install
 
 
 FROM tomcat:8-jre11
