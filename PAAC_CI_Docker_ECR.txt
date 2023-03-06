@@ -13,7 +13,7 @@ pipeline {
   stages {
     stage('Fetch code'){
       steps {
-        git branch: 'main', url: 'https://github.com/Hussain147/paac_with_ecs.git'
+        git branch: 'main', url: 'https://github.com/Hussain147/paac-with-ecs.git'
       }
     }
 
@@ -23,13 +23,6 @@ pipeline {
         sh 'mvn test'
       }
     }
-
-    stage('install'){
-      steps {
-        sh 'mvn install'
-      }
-    }
-
     stage('Build App Image') {
        steps {
        
