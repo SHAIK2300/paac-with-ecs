@@ -1,8 +1,9 @@
 FROM openjdk:11 AS BUILD_IMAGE
 RUN apt update
-FROM maven:alpine
+
 RUN git clone https://github.com/Hussain147/paac-with-ecs.git
 RUN cd paac-with-ecs
+FROM maven:alpine
 RUN mvn install
 
 
