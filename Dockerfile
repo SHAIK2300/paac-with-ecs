@@ -1,4 +1,4 @@
-FROM openjdk:11 AS BUILD_IMAGE
+FROM openjdk:8 AS BUILD_IMAGE
 RUN apt update
 RUN apt install maven -y
 
