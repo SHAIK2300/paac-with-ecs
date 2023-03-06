@@ -4,7 +4,7 @@ RUN apt install maven -y
 
 RUN git clone https://github.com/Hussain147/paac-with-ecs.git
 RUN cd paac-with-ecs
-RUN mvn install
+RUN mvn clean install
 
 
 FROM tomcat:8-jre11
