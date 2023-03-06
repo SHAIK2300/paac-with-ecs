@@ -3,7 +3,6 @@ RUN apt update
 
 RUN git clone https://github.com/Hussain147/paac-with-ecs.git
 RUN cd paac-with-ecs
-FROM maven:alpine
 RUN mvn install
 
 

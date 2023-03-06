@@ -24,6 +24,12 @@ pipeline {
       }
     }
 
+    stage('install'){
+      steps {
+        sh 'mvn install'
+      }
+    }
+
     stage('Build App Image') {
        steps {
        
