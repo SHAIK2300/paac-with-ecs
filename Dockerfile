@@ -11,4 +11,4 @@ RUN apt-get update && \
 EXPOSE 80
 
 # Start the web server
-CMD ["httpd-background"]
+CMD ["httpd-foreground"]
