@@ -1,5 +1,5 @@
 # Start with a base image containing a web server
-FROM httpd:latest
+FROM nginx:latest
 
 # Clone the repository
 RUN apt-get update && \
